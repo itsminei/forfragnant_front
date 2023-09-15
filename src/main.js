@@ -10,7 +10,7 @@ const main = () => {
   return (
     <div className='main'>
       <h1>핑크 서브웨이</h1>
-      <img src={IMG} alt='image'></img>
+      <img src={IMG} alt='핑크 서브웨이 로고'></img>
       <Link to='/login'>
         <button>로그인 하기</button>
       </Link>
