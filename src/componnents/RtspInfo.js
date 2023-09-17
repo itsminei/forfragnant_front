@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom"; // useNavigate로 변경
 import "./RtspInfo.css";
 
@@ -6,7 +6,8 @@ const RtspInfo = ({ stationName }) => {
   const navigate = useNavigate(); // useNavigate를 사용하여 경로 이동을 위한 함수를 가져옵니다.
 
   // 각 호선의 도착 정보를 상태로 관리
-  const [lineInfo, setLineInfo] = useState({
+
+  const lineInfo =({
     "1호선": { next: "5분 남음", afterNext: "10분 남음" },
     "4호선": { next: "3분 남음", afterNext: "7분 남음" },
     "경의중앙선": { next: "6분 남음", afterNext: "12분 남음" },
