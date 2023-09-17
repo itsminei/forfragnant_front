@@ -30,15 +30,27 @@ function Realtime() {
   return (
     <div>
       <h1>실시간 좌석 점유 현황</h1>
-      <div className="grid">
-        {[...Array(12)].map((_, index) => (
-          <div
-            key={index}
-            className={`box ${index === 2 && piData === 0 ? "red" : "gray"}`}
-          >
-            {index === 2 && piData === 0 ? "좌석이 비었습니다" : ""}
-          </div>
-        ))}
+      <div className="subway">
+        <div className="subway-column">
+          {[...Array(6)].map((_, rowIndex) => (
+            <div
+              key={rowIndex}
+              className={`box ${rowIndex === 2 && piData === 0 ? "red" : "gray"}`}
+            >
+              {rowIndex === 2 && piData === 0 ? "좌석이 비었습니다" : ""}
+            </div>
+          ))}
+        </div>
+        <div className="subway-column">
+          {[...Array(6)].map((_, rowIndex) => (
+            <div
+              key={rowIndex}
+              className={`box ${rowIndex === 2 && piData === 0 ? "red" : "gray"}`}
+            >
+              {rowIndex === 2 && piData === 0 ? "좌석이 비었습니다" : ""}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

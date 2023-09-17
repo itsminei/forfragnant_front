@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subway-info {
+    background-color: #ffedf4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .arrival-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .train-info {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* 추가: 텍스트 색상 변경 */
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 5px;
+    color: #666; /* 추가: 텍스트 색상 변경 */
+  }
+  

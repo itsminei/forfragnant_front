@@ -37,7 +37,7 @@ const Login = () => {
     <>
       <input
         type="text"
-        placeholder="아이디를 입력하세요."
+        placeholder="이메일을 입력하세요."
         value={signinEmail}
         onChange={(e) => setSigninEmail(e.target.value)}
       />

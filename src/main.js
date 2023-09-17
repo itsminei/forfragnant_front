@@ -4,7 +4,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import './App.css';
-import IMG from './img/1.png';
+import IMG from './img/2.png';
 console.log(firebase);
 const main = () => {
   return (
