@@ -1,0 +1,34 @@
+.train-container {
+    text-align: center;
+  }
+  
+  .train-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .train-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .train-cars {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .train-car {
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid black;
+    min-width: 60px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .train-cars {
+      flex-wrap: wrap;
+    }
+  }
+  

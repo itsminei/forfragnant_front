@@ -8,7 +8,7 @@ function Realtime() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const docRef = doc(db, "seat", "a1");
+      const docRef = doc(db, "seat", "b1");
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {

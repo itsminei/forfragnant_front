@@ -1,8 +1,13 @@
 .subway {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.subway-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .subway-row {
@@ -21,11 +26,21 @@
 }
 
 .gray {
-  background-color: gray;
+  background-color: rgb(212, 212, 212);
   color: white; /* 글자 색상 설정 */
 }
 
 .red {
   background-color: red;
+  color: white; /* 글자 색상 설정 */
+}
+
+.pink{
+  background-color: rgb(250, 129, 149);
+  color: white; /* 글자 색상 설정 */
+}
+
+.hotpink{
+  background-color: rgb(237, 91, 115);
   color: white; /* 글자 색상 설정 */
 }
