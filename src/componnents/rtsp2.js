@@ -8,7 +8,7 @@ function Realtime() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const docRef = doc(db, "seat", "b1");
+      const docRef = doc(db, "seat", "a1");
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -35,9 +35,9 @@ function Realtime() {
           {[...Array(6)].map((_, rowIndex) => (
             <div
               key={rowIndex}
-              className={`box ${rowIndex === 0 ? (piData === 0 ? "pink" : (piData === 1 ? "hotpink" : "gray")) : (rowIndex === 5 ? "pink" : "gray")}`}
+              className={`box ${rowIndex === 5 ? (piData === 0 ? "pink" : (piData === 1 ? "hotpink" : "gray")) : (rowIndex === 0 ? "pink" : "gray")}`}
             >
-              {rowIndex === 0 ? (piData === 0 ? "비었음" : (piData === 1 ? "앉았음" : "")) : (rowIndex === 5 ? "비었음" : "")}
+              {rowIndex === 5 ? (piData === 0 ? "비었음" : (piData === 1 ? "앉았음" : "")) : (rowIndex === 0 ? "비었음" : "")}
             </div>
           ))}
         </div>
